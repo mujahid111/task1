@@ -1,39 +1,35 @@
 
 var a = 10;
-
-function addition(i, a)
-{
+var b = 10;
+function addition(i, a) {
     return i + a;
 }
 
-function sub(i, a)
-{
+function sub(i, a) {
     return i - a;
 }
 
-function mul(i, a)
-{
-   return i * a;
+function mul(i, a) {
+    return i * a;
 }
 
-function devide(i, a)
-{
+function devide(i, a) {
     return i / a;
 }
 
-function module(i, a)
-{
-    return i % a; 
+function module(i, a) {
+    return i % a;
 }
-for(i = 2; i < a; i++)
-    {           
-        console.log('Addition of '+ i +' + '+ a + ' = ',addition(i, a));
-        console.log('Subtration of '+ i +' - '+ a + ' = ',sub(i, a));
-        console.log('Multiplication of '+ i +' * '+ a + ' = ', mul(i, a));
-        console.log('Division of '+ i +' / '+ a + ' = ',devide(i, a));
-        console.log('Module of '+ i +' % '+ a + ' = ',module(i, a));
-        break;
+for (i = 1; i < a; i++) {
+    for (j = 1; j < b; j++) {
+        console.log(`Addition of ${i} + ${j} =`, addition(i, j));
+        console.log(`Subtration of ${i} - ${j}=`, sub(i, j));
+        console.log(`Multiplication of ${i} * ${j}=`, mul(i, j));
+        console.log(`Division of ${i} / ${j}=`, devide(i, j));
+        console.log(`Module of ${i} % ${j}=`, module(i, j));
+
     }
+}
 
 
 
